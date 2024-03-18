@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="heading">
+        <h1 id="title">Food Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us understand your preferences through this survey
+      </header>
+      <form action="/submit.url" method="get" id="survey-form">
+        <div class="form-group">
+          <label 
+          id="name-label" 
+          for="name">Name
+          </label>
+          <input 
+          id="name" 
+          type="text" 
+          class="form-control" 
+          name="name" 
+          placeholder="Please enter your name" required>
+        </div>
+        <div class="form-group">
+          <label 
+          id="email-label" 
+          for="email">Email</label>
+          <input 
+          id="email" 
+          type="email" 
+          class="form-control" 
+          name="email" 
+          placeholder="Please enter your email" 
+          required>
+        </div>
+        <div class="form-group">
+          <label 
+          id="number-label" 
+          for="number">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+            required>
+        </div>
+        <div class="form-group">
+          <p>What type of cuisines do you like or prefer?<p>
+            <select id="dropdown" name="role" class="form-control">
+              <option disabled selected value>Select your favourite/preferred cuisine</option>
+              <option value="north-indian">North Indian</option>
+              <option value="south-indian">South Indian</option>
+              <option value="east -indian">East Indian</option>
+              <option value="west-indian">West Indian</option>
+              <option value="korean">Korean</option>
+              <option value="japanese">Japanese</option>
+              <option value="chinese">Chinese</option>
+              <option value="thai">Thai</option>
+              <option value="french">French</option>
+              <option value="american">American</option>
+              <option value="mongolian">Mongolian</option>
+              <option value="vegan">Vegan</option>
+              <option value="vegetarian">Vegetarian</option>
+              <option value="street-food">Street Food</option>
+              <option value="desserts">Desserts</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <p>Do you enjoy cooking or baking?</p>
+          <label> 
+            <input 
+            id="cooking"
+            name="preference"
+            value="cooking"
+            type="radio"
+            class="input-radio"
+            checked>
+            Cooking
+          </label>
+          <label> 
+            <input 
+            id="baking"
+            name="preference"
+            value="baking"
+            type="radio"
+            class="input-radio">
+            Baking
+          </label>
+          <label> 
+            <input 
+            id="both"
+            name="preference"
+            value="both"
+            type="radio"
+            class="input-radio">
+            Both
+          </label>
+          <label> 
+            <input 
+            id="none"
+            name="preference"
+            value="none"
+            type="radio"
+            class="input-radio">
+            None
+          </label>
+        </div>
+        <div class="form-group">
+          <p>In beverages, what do you usually enjoy? <span class="clue">(Check all that apply)</span></p>
+          <label>
+            <input 
+            id="regular-coffee"
+            name="regular-coffee"
+            value="regular-coffee"
+            type="checkbox"
+            class="input-checkbox">
+            Regular Coffee
+          </label>
+          <label>
+            <input 
+            id="tea"
+            name="tea"
+            value="tea"
+            type="checkbox"
+            class="input-checkbox">
+            Tea
+          </label>
+          <label>
+            <input 
+            id="iced-tea"
+            name="iced-tea"
+            value="iced-tea"
+            type="checkbox"
+            class="input-checkbox">
+            Iced Tea
+          </label>
+          <label>
+            <input 
+            id="green-tea"
+            name="green-tea"
+            value="green-tea"
+            type="checkbox"
+            class="input-checkbox">
+            Green Tea
+          </label>
+          <label>
+            <input 
+            id="americano"
+            name="americano"
+            value="americano"
+            type="checkbox"
+            class="input-checkbox">
+            Americano
+          </label>
+          <label>
+            <input 
+            id="Dalgona Coffee"
+            name="Dalgona Coffee"
+            value="Dalgona Coffee"
+            type="checkbox"
+            class="input-checkbox">
+            Dalgona Coffee
+          </label>
+          <label>
+            <input 
+            id="Mocha"
+            name="Mocha"
+            value="Mocha"
+            type="checkbox"
+            class="input-checkbox">
+            Mocha
+          </label>
+          <label>
+            <input 
+            id="latte"
+            name="latte"
+            value="latte"
+            type="checkbox"
+            class="input-checkbox">
+            Latte
+          </label>
+          <label>
+            <input 
+            id="hot-chocolate"
+            name="hot-chocolate"
+            value="hot-chocolate"
+            type="checkbox"
+            class="input-checkbox">
+            Hot Chocolate
+          </label>
+          <label>
+            <input 
+            id="fruit-juice"
+            name="fruit-juice"
+            value="fruit-juice"
+            type="checkbox"
+            class="input-checkbox">
+            Fruit Juice
+          </label>
+          <label>
+            <input 
+            id="beer"
+            name="beer"
+            value="beer"
+            type="checkbox"
+            class="input-checkbox">
+            Beer
+          </label>
+          <label>
+            <input 
+            id="red-wine"
+            name="red-wine"
+            value="red-wine"
+            type="checkbox"
+            class="input-checkbox">
+            Red Wine
+          </label>
+          <label>
+            <input 
+            id="white-wine"
+            name="white-wine"
+            value="white-wine"
+            type="checkbox"
+            class="input-checkbox">
+            White Wine
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Please feel free to leave down any comments or suggestions you might have</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

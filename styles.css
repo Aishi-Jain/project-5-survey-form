@@ -1,0 +1,78 @@
+body {
+    margin: 3em;;
+    background-color: #20310e;
+    color: #f5f6f7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    border: 3px solid rgb(45, 55, 43);
+    box-shadow: 2px 2px 5px rgb(118, 169, 108) ;
+    border-radius: 3em;
+    line-height: 1.4em;
+}
+
+h1 {
+    color: rgb(95, 187, 95);
+}
+
+p {
+    color: rgb(111, 157, 111);
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+#description {
+    margin-top: -20px;
+    margin-bottom: 30
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+
+input {
+    min-height: 1em;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    color: rgb(150, 175, 150);
+}
+
+.form-control, 
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2.5em;
+    background-color: #293a19;
+    color: rgb(192, 186, 186);
+}
+
+textarea {
+    background-color: #293a19;
+    color: rgb(192, 186, 186);
+    border: 1px solid #0a0a23;
+    height: 100px;
+}
+
+button {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #173303;
+    border-color: white;
+    color: white;
+    min-width: 300px;
+}
+
